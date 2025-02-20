@@ -14,7 +14,7 @@
             <input type="text" id="titleInput" placeholder="Book Title">
             <input type="text" id="authorInput" placeholder="Author">
             <input type="text" id="genreInput" placeholder="Genre">
-            <button onclick="addBook()">➕ Add Book</button>
+            <button id="addBook">➕ Add Book</button>
         </div>
 
         <ul id="bookList"></ul>
@@ -23,8 +23,9 @@
         <button id="biometricLogin">🔒 Login with Biometrics</button>
     </div>
 
-    <script src="firebase-config.js"></script>
-    <script src="script.js"></script>
+    <script type="module" src="firebase-config.js"></script>
+    <script type="module" src="script.js"></script>
+    <script type="module" src="ai-chatbot.js"></script>
+    <script type="module" src="biometric.js"></script>
 </body>
 </html>
-
