@@ -4,25 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Log App</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <div class="container">
-        <h1>📚 Book Log</h1>
-        
-        <div class="input-section">
+        <!-- Header Section -->
+        <header>
+            <h1>Book Log Application</h1>
+            <button id="biometricLogin">Login with Biometrics</button>
+        </header>
+
+        <!-- Input Section -->
+        <section class="input-section">
             <input type="text" id="titleInput" placeholder="Book Title">
             <input type="text" id="authorInput" placeholder="Author">
             <input type="text" id="genreInput" placeholder="Genre">
-            <button id="addBook">➕ Add Book</button>
-        </div>
+            <button id="addBook">Add Book</button>
+        </section>
 
-        <ul id="bookList"></ul>
+        <!-- Book List Section -->
+        <section class="book-list-section">
+            <h2>Your Book List</h2>
+            <ul id="bookList"></ul>
+        </section>
 
-        <button id="aiChatbot">🤖 Ask AI</button>
-        <button id="biometricLogin">🔒 Login with Biometrics</button>
+        <!-- AI Chatbot Section -->
+        <section class="ai-section">
+            <h2>Ask the AI for Book Suggestions</h2>
+            <input type="text" id="aiQuery" placeholder="Ask a question...">
+            <button id="aiChatbot">Ask AI</button>
+            <div id="aiResponse"></div>
+        </section>
     </div>
 
+    <!-- Scripts -->
     <script type="module" src="firebase-config.js"></script>
     <script type="module" src="script.js"></script>
     <script type="module" src="ai-chatbot.js"></script>
